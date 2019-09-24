@@ -10,7 +10,7 @@ public class LibraryTest {
 
     @Before
     public void before(){
-        library = new Library();
+        library = new Library(2000);
         book1 = new Book("The Light Fantastic", "Terry Pratchett", "Fantasy");
     }
 
