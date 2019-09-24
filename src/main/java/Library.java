@@ -19,4 +19,12 @@ public class Library {
             this.bookCollection.add(book1);
         }
     }
+
+    public Book removeFromCollection(Book book) {
+        int index = this.bookCollection.indexOf(book);
+        if(index >= 0){
+            return this.bookCollection.remove(index);
+        }
+        return null;
+    }
 }
